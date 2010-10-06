@@ -261,7 +261,7 @@ namespace utf8
       octet_iterator range_start;
       octet_iterator range_end;
       public:
-      iterator () {};
+      iterator () {}
       explicit iterator (const octet_iterator& octet_it, 
                          const octet_iterator& range_start,
                          const octet_iterator& range_end) :
