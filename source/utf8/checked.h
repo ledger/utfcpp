@@ -33,6 +33,9 @@ DEALINGS IN THE SOFTWARE.
 
 namespace utf8
 {
+    template <typename octet_iterator>
+        octet_iterator append(uint32_t cp, octet_iterator result);
+
     // Exceptions that may be thrown from the library functions.
     class invalid_code_point : public std::exception {
         uint32_t cp;
